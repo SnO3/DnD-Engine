@@ -1,4 +1,4 @@
-package com.dndarena.CharacterInfo;
+package dndEngine.v5e;
 
 public class Elf implements Race{
 	private static final String SKILL_PROF = "PERC";

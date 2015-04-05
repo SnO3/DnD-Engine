@@ -1,6 +1,6 @@
-package com.dndarena.CharacterInfo;
+package dndEngine.v5e;
 
-import com.dndarena.CharacterInfo.Elf.Subrace;
+import dndEngine.v5e.Elf.Subrace;
 
 public interface Race {
 	public static final int SIZE = 2;
