@@ -1,8 +1,11 @@
 package dndEngine.v5e;
 
+import java.util.EnumSet;
+
 public class Spellbook {
 	public enum Bard
 	{
+		//Cantrips
 		Blade_Ward,
 		Dancing_Lights,
 		Friends,
@@ -60,7 +63,7 @@ public class Spellbook {
 		Suggestion,
 		Zone_of_Truth,
 		//3rd Level
-		Bestoy_Curse,
+		Bestow_Curse,
 		Clairvoyance,
 		Dispel_Magic,
 		Fear,
@@ -912,4 +915,12 @@ public class Spellbook {
 		Weird,
 		Wish
 	}
+
+	private EnumSet<Bard> BCantrips = EnumSet.range(Bard.Blade_Ward, Bard.Vicious_Mockery);
+	private EnumSet<Bard> B1stLevel = EnumSet.range(Bard.Animal_Friendship, Bard.Unseen_Servant);
+	private EnumSet<Bard> B2ndLevel = EnumSet.range(Bard.Animal_Messenger, Bard.Zone_of_Truth);
+	private EnumSet<Bard> B3rdLevel = EnumSet.range(Bard.Bestow_Curse, Bard.Tongues);
+	private EnumSet<Bard> B4thLevel = EnumSet.range(Bard.Compulsion, Bard.Polymorph);
+	private EnumSet<Bard> B5thLevel = EnumSet.range(Bard.Animate_Objects, Bard.Teleportation_Circle);
+	private EnumSet<Bard> B6thLevel = EnumSet.range(Bard.Eyebite, Bard.True_Seeing);
 }
